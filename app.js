@@ -1,21 +1,32 @@
 //? INPUTS CAPTURING AND DECLARATION
 
 //! Inputting text with color names  
-const inputColorName=document.getElementById("input-color-name");
-const inputtedColor=inputColorName.value;
+const colorsFromInput=document.querySelector(".colors-from-input-color");
+const selectedColorFromInput=colorsFromInput.value;
 
 //! Inputting text with RGB  
-const inputColorNameRGB=document.getElementById("input-color-name-rgb");
-const inputtedColorRGB=inputColorNameRGB.value;
+const colorsFromInputRGB=document.querySelector(".colors-from-input-color-rgb");
+const selectedColorsFromInputRGB=colorsFromInputRGB.value;
 
 //! Inputting text with HEX  
-const inputColorNameHEX=document.getElementById("input-color-name-rgb");
-const inputtedColorHEX=inputColorNameHEX.value;
+const colorsFromInputHEX=document.querySelector(".colors-from-input-color-hex");
+const selectedColorsFromInputHEX=colorsFromInputHEX;
+
+//? DECLARATION OF 140 COLORS
+const colors={
+id:0,
+red:"red",
+rgb: "(255, 0, 0)",
+hex:"FF0000",
+};
 
 
 //? SELECT BOX CAPTURING AND DECLARATION
-const selectBoxColorName=document.getElementById("select-box-color-names");
-const selectedColor=selectBoxColorName.value;
+const colorsFromSelectBox=document.querySelector(".colors-from-select-box");
+console.log(colorsFromSelectBox[colors.id].value);
+// const selectedColorFromSelectBox=colorsFromSelectBox[colorsFromSelectBox.option].value;
+// console.log(selectedColorFromSelectBox);
+
 
 //? RESULT DISPLAY DIV CAPTURING AND DECLARATION
 const resultDisplay=document.querySelector("result-display");
@@ -26,12 +37,14 @@ const resultDisplay=document.querySelector("result-display");
 
 
 
+// console.log(colors.red);
+
+colorsFromSelectBox.addEventListener("change",(e)=>{
+
+console.log(e.target.value);
 
 
 
-selectBoxColorName.addEventListener("change",()=>{
-
-console.log(selectedColor);
 })
 // const selectedColor=selectBoxColorName.options[select.selectedIndex];
 // console.log(selectedColor);
