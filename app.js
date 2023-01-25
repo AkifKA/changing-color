@@ -12,6 +12,29 @@ const selectedColorsFromInputRGB=colorsFromInputRGB.value;
 const colorsFromInputHEX=document.querySelector(".colors-from-input-color-hex");
 const selectedColorsFromInputHEX=colorsFromInputHEX;
 
+//? SELECT BOX CAPTURING AND DECLARATION
+const colorsFromSelectBox=document.querySelector(".colors-from-select-box");
+const selecetedColorFromSelectBox=colorsFromSelectBox.text;
+
+//? RESULT DISPLAY DIV CAPTURING AND DECLARATION
+const resultDisplay=document.querySelector(".result-display");
+
+
+//? RESULT CHOOSEN COLOR H3 CAPTURING AND DECLARATION
+const choosenColor=document.querySelector(".choosen-color");
+
+
+
+colorsFromSelectBox.addEventListener("change",(e)=>{
+    const {selectedIndex}=e.target;
+    console.log(e.target.id);
+    resultDisplay.style.background=`${e.target.value}`
+    choosenColor.innerText=`${e.target[selectedIndex].text}`
+    })
+    
+
+
+
 //? DECLARATION OF 140 COLORS
 const colors=[
 {
@@ -76,36 +99,6 @@ hex:"#FFC0CB",
 },
 
 
-
-
-
 ];
 
 
-//? SELECT BOX CAPTURING AND DECLARATION
-const colorsFromSelectBox=document.querySelector(".colors-from-select-box");
-console.log(colorsFromSelectBox[colors.id].value);
-// const selectedColorFromSelectBox=colorsFromSelectBox[colorsFromSelectBox.option].value;
-// console.log(selectedColorFromSelectBox);
-
-
-//? RESULT DISPLAY DIV CAPTURING AND DECLARATION
-const resultDisplay=document.querySelector("result-display");
-
-
-
-
-
-
-
-// console.log(colors.red);
-
-colorsFromSelectBox.addEventListener("change",(e)=>{
-
-console.log(e.target.value);
-
-
-
-})
-// const selectedColor=selectBoxColorName.options[select.selectedIndex];
-// console.log(selectedColor);
