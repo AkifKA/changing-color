@@ -10,7 +10,11 @@
   <body>
     <!--? HEADER  -->
     <header class="main-title">
-      <h1>CHOOSE YOUR FAVORITE NAME</h1>
+      <h1>CHOOSE YOUR FAVORITE COLOR</h1>
+      <section class="result-display">
+        <h2>Chosen Color Display</h2>
+        <h3 class="choosen-color"></h3>
+      </section>
     </header>
 
     <!--? MAIN  -->
@@ -18,8 +22,12 @@
       <!--? CHANGING MANUALLY COLUMN -->
       <section class="changing-manually changing-cols">
         <h2>Choose Your Color Manually</h2>
+
         <article class="changing-with-input-text-color-name manually-row">
-          <p>Enter color name</p>
+          <p>Enter color name in Enlish from 143 colors</p>
+          <a href="https://htmlcolorcodes.com/color-names/" target="_blank"
+            >Click to show 143 Color's name</a
+          >
           <!--? Input Color Name  -->
           <input
             type="text"
@@ -29,7 +37,7 @@
         </article>
 
         <article class="changing-with-input-text-rgba manually-row">
-          <p>Enter color RGB</p>
+          <p>Enter numbers for RGB (x,x,x)</p>
           <!--? Input Color RGBA  -->
           <input
             type="text"
@@ -39,7 +47,7 @@
         </article>
 
         <article class="changing-with-input-text-hex manually-row">
-          <p>Enter color HEX</p>
+          <p>Enter numbers or letters ammong A-F for HEX (xxxxxx)</p>
 
           <!--? Input Color HEX  -->
           <input
@@ -58,7 +66,7 @@
           >
             <!--? RED (9) -->
             <optgroup label="Reds from light to dark (9 tones)">
-              <option name="Indian Red" value="indianred">Indian Red</option>
+              <option value="indianred">Indian Red</option>
               <option value="lightcoral">Light Coral</option>
               <option value="salmon">Salmon</option>
               <option value="darksalmon">Dark Salmon</option>
@@ -72,20 +80,20 @@
             <!--? PINK (6)  -->
             <optgroup label="Pinks from light to dark (6 tones) ">
               <option value="pink">Pink</option>
-              <option value="lightPink">Light Pink</option>
-              <option value="hotPink">Hot Pink</option>
-              <option value="deepPink">Deep Pink</option>
-              <option value="mediumVioletRed">Medium Violet Red</option>
-              <option value="paleVioletRed">Pale Violet Red</option>
+              <option value="lightpink">Light Pink</option>
+              <option value="hotpink">Hot Pink</option>
+              <option value="deeppink">Deep Pink</option>
+              <option value="mediumvioletred">Medium Violet Red</option>
+              <option value="palevioletred">Pale Violet Red</option>
             </optgroup>
 
             <!--? ORANGE (6)  -->
             <optgroup label="Oranges from light to dark (6 tones)">
-              <option value="lightSalmon">Light Salmon</option>
+              <option value="lightsalmon">Light Salmon</option>
               <option value="coral">Coral</option>
               <option value="tomato">Tomato</option>
-              <option value="orangeRed">Orange Red</option>
-              <option value="darkOrange">Dark Orange</option>
+              <option value="orangered">Orange Red</option>
+              <option value="darkorange">Dark Orange</option>
               <option value="orange">Orange</option>
             </optgroup>
 
@@ -93,17 +101,17 @@
             <optgroup label="Yellows from light to dark (11 tones)">
               <option value="gold">Gold</option>
               <option value="yellow">Yellow</option>
-              <option value="lightYellow">Light Yellow</option>
-              <option value="lemonChiffon">Lemon Chiffon</option>
-              <option value="lightGoldenrodYellow">
+              <option value="lightyellow">Light Yellow</option>
+              <option value="lemonchiffon">Lemon Chiffon</option>
+              <option value="lightgoldenrodyellow">
                 Light Goldenrod Yellow
               </option>
               <option value="papayaWhip">Papaya Whip</option>
               <option value="moccasin">Moccasin</option>
               <option value="peachPuff">Peach Puff</option>
-              <option value="paleGoldenrod">Pale Goldenrod</option>
+              <option value="palegoldenrod">Pale Goldenrod</option>
               <option value="khaki">Khaki</option>
-              <option value="darkKhaki">Dark Khaki</option>
+              <option value="darkkhaki">Dark Khaki</option>
             </optgroup>
 
             <!--? PURPLE (19) -->
@@ -115,44 +123,44 @@
               <option value="orchid">Orchid</option>
               <option value="fuchsia">Fuchsia</option>
               <option value="magenta">Magenta</option>
-              <option value="mediumOrchid">Medium Orchid</option>
-              <option value="mediumPurple">Medium Purple</option>
-              <option value="rebeccaPurple">Rebecca Purple</option>
-              <option value="blueViolet">Blue Violet</option>
-              <option value="darkViolet">Dark Violet</option>
-              <option value="darkOrchid">Dark Orchid</option>
-              <option value="darkMagenta">Dark Magenta</option>
+              <option value="mediumorchid">Medium Orchid</option>
+              <option value="mediumpurple">Medium Purple</option>
+              <option value="rebeccapurple">Rebecca Purple</option>
+              <option value="blueviolet">Blue Violet</option>
+              <option value="darkviolet">Dark Violet</option>
+              <option value="darkorchid">Dark Orchid</option>
+              <option value="darkmagenta">Dark Magenta</option>
               <option value="purple">Purple</option>
               <option value="indigo">Indigo</option>
-              <option value="slateBlue">Dark Khaki</option>
-              <option value="darkSlateBlue">Slate Blue</option>
-              <option value="mediumSlateBlue">Medium Slate Blue</option>
+              <option value="slateblue">Dark Khaki</option>
+              <option value="darkslateblue">Slate Blue</option>
+              <option value="mediumslateblue">Medium Slate Blue</option>
             </optgroup>
 
             <!--? GREEN (23) -->
             <optgroup label="Greens from light to dark (23 tones)">
-              <option value="greenYellow">Green Yellow</option>
+              <option value="greenyellow">Green Yellow</option>
               <option value="chartreuse">Chartreuse</option>
-              <option value="lawnGreen">LawnGreen</option>
+              <option value="lawngreen">LawnGreen</option>
               <option value="lime">Lime</option>
-              <option value="limeGreen">Lime Green</option>
-              <option value="paleGreen">Pale Green</option>
-              <option value="lightGreen">Light Green</option>
-              <option value="mediumSeaGreen">Medium Sea Green</option>
+              <option value="limegreen">Lime Green</option>
+              <option value="palegreen">Pale Green</option>
+              <option value="lightgreen">Light Green</option>
+              <option value="mediumseagreen">Medium Sea Green</option>
               <option value="springGreen">Spring Green</option>
-              <option value="mediumSeaGreen">Medium Sea Green</option>
+              <option value="mediumseagreen">Medium Sea Green</option>
               <option value="seaGreen">Sea Green</option>
-              <option value="forestGreen">Forest Green</option>
+              <option value="forestgreen">Forest Green</option>
               <option value="green">Green</option>
-              <option value="darkGreen">Dark Green</option>
-              <option value="yellowGreen">Yellow Green</option>
-              <option value="oliveDrab">Olive Drab</option>
+              <option value="darkgreen">Dark Green</option>
+              <option value="yellowgreen">Yellow Green</option>
+              <option value="olivedrab">Olive Drab</option>
               <option value="olive">Olive</option>
-              <option value="darkOliveGreen">Dark Olive Green</option>
-              <option value="mediumAquamarine">Medium Aquamarine</option>
-              <option value="darkSeaGreen">Dark Sea Green</option>
-              <option value="lightSeaGreen">Light Sea Green</option>
-              <option value="darkCyan">Dark Cyan</option>
+              <option value="darkolivegreen">Dark Olive Green</option>
+              <option value="mediumaquamarine">Medium Aquamarine</option>
+              <option value="darkseagreen">Dark Sea Green</option>
+              <option value="lightseagreen">Light Sea Green</option>
+              <option value="darkcyan">Dark Cyan</option>
               <option value="teal">Teal</option>
             </optgroup>
 
@@ -160,46 +168,46 @@
             <optgroup label="Blues from light to dark (25 tones)">
               <option value="aqua">Aqua</option>
               <option value="cyan">Cyan</option>
-              <option value="lightCyan">Light Cyan</option>
-              <option value="paleTurquoise">Pale Turquoise</option>
+              <option value="lightcyan">Light Cyan</option>
+              <option value="paleturquoise">Pale Turquoise</option>
               <option value="aquamarine">Aquamarine</option>
               <option value="turquoise">Turquoise</option>
-              <option value="mediumTurquoise">Medium Turquoise</option>
-              <option value="darkTurquoise">Dark Turquoise</option>
-              <option value="cadetBlue">Cadet Blue</option>
-              <option value="steelBlue">Steel Blue</option>
-              <option value="lightSteelBlue">Light Steel Blue</option>
-              <option value="powderBlue">Powder Blue</option>
-              <option value="lightBlue">Light Blue</option>
-              <option value="skyBlue">Sky Blue</option>
-              <option value="lightSkyBlue">Light Sky Blue</option>
-              <option value="deepSkyBlue">Deep Sky Blue</option>
-              <option value="dodgerBlue">Dodger Blue</option>
-              <option value="cornflowerBlue">Cornflower Blue</option>
-              <option value="mediumSlateBlue">Medium Slate Blue</option>
-              <option value="royalBlue">Royal Blue</option>
+              <option value="mediumturquoise">Medium Turquoise</option>
+              <option value="darkturquoise">Dark Turquoise</option>
+              <option value="cadetblue">Cadet Blue</option>
+              <option value="steelblue">Steel Blue</option>
+              <option value="lightsteelblue">Light Steel Blue</option>
+              <option value="powderblue">Powder Blue</option>
+              <option value="lightblue">Light Blue</option>
+              <option value="skyblue">Sky Blue</option>
+              <option value="lightskyblue">Light Sky Blue</option>
+              <option value="deepskyblue">Deep Sky Blue</option>
+              <option value="dodgerblue">Dodger Blue</option>
+              <option value="cornflowerblue">Cornflower Blue</option>
+              <option value="mediumslateblue">Medium Slate Blue</option>
+              <option value="royalblue">Royal Blue</option>
               <option value="blue">Blue</option>
-              <option value="mediumBlue">Medium Blue</option>
-              <option value="darkBlue">Dark Blue</option>
+              <option value="mediumblue">Medium Blue</option>
+              <option value="darkblue">Dark Blue</option>
               <option value="navy">Navy</option>
-              <option value="midnightBlue">Midnight Blue</option>
+              <option value="midnightblue">Midnight Blue</option>
             </optgroup>
             <!--? BROWN (17) -->
             <optgroup label="Browns from light to dark (17 tones)">
               <option value="cornsilk">Cornsilk</option>
-              <option value="blanchedAlmond">Blanched Almond</option>
+              <option value="blanchedalmond">Blanched Almond</option>
               <option value="bisque">Bisque</option>
-              <option value="navajoWhite">Navajo White</option>
+              <option value="navajowhite">Navajo White</option>
               <option value="wheat">Wheat</option>
-              <option value="burlyWood">Burly Wood</option>
+              <option value="burlywood">Burly Wood</option>
               <option value="tan">Tan</option>
-              <option value="rosyBrown">Rosy Brown</option>
-              <option value="sandyBrown">Sandy Brown</option>
+              <option value="rosybrown">Rosy Brown</option>
+              <option value="sandybrown">Sandy Brown</option>
               <option value="goldenrod	">Goldenrod</option>
-              <option value="darkGoldenrod">Dark Goldenrod</option>
+              <option value="darkgoldenrod">Dark Goldenrod</option>
               <option value="peru">Peru</option>
               <option value="chocolate">Chocolate</option>
-              <option value="saddleBrown">Saddle Brown</option>
+              <option value="saddlebrown">Saddle Brown</option>
               <option value="sienna">Sienna</option>
               <option value="brown">Brown</option>
               <option value="maroon">Maroon</option>
@@ -209,34 +217,34 @@
             <optgroup label="Whites from light to dark (17 tones)">
               <option value="white">White</option>
               <option value="snow">Snow</option>
-              <option value="honeyDew">Honey Dew</option>
-              <option value="mintCream">Mint Cream</option>
+              <option value="honeydew">Honey Dew</option>
+              <option value="mintcream">Mint Cream</option>
               <option value="azure">Azure</option>
-              <option value="aliceBlue">Alice Blue</option>
-              <option value="ghostWhite">Ghost White</option>
-              <option value="whiteSmoke">White Smoke</option>
-              <option value="seaShell">Sea Shell</option>
+              <option value="aliceblue">Alice Blue</option>
+              <option value="ghostwhite">Ghost White</option>
+              <option value="whitesmoke">White Smoke</option>
+              <option value="seashell">Sea Shell</option>
               <option value="beige	">Beige</option>
-              <option value="oldLace">Old Lace</option>
-              <option value="floralWhite">Floral White</option>
+              <option value="oldlace">Old Lace</option>
+              <option value="floralwhite">Floral White</option>
               <option value="ivory">Ivory</option>
-              <option value="antiqueWhite">Antique White</option>
+              <option value="antiquewhite">Antique White</option>
               <option value="linen">Linen</option>
-              <option value="lavenderBlush">Lavender Blush</option>
-              <option value="mistyRose">Misty Rose</option>
+              <option value="lavenderblush">Lavender Blush</option>
+              <option value="mistyrose">Misty Rose</option>
             </optgroup>
 
             <!--? GRAY (10) -->
             <optgroup label="Grays from light to dark (10 tones)">
               <option value="gainsboro">Gainsboro</option>
-              <option value="lightgray">LightGray</option>
+              <option value="lightgray">Ligh tGray</option>
               <option value="silver">Silver</option>
-              <option value="darkgray">DarkGray</option>
+              <option value="darkgray">Dark Gray</option>
               <option value="gray">Gray</option>
-              <option value="dimGray">DimGray</option>
-              <option value="lightSlateGray">Light Slate Gray</option>
-              <option value="slateGray">SlateGray</option>
-              <option value="darkSlateGray">DarkSlateGray</option>
+              <option value="dimgray">Dim Gray</option>
+              <option value="lightslategray">Light Slate Gray</option>
+              <option value="slategray">SlateGray</option>
+              <option value="darkslategray">Dark Slat Gray</option>
               <option value="black	">Black</option>
             </optgroup>
           </select>
@@ -247,7 +255,7 @@
       <section class="changing-random changing-cols">
         <h2>Choose Random Color</h2>
         <article class="random-color">
-          <button>Random From 140 Color</button>
+          <button>Random From 143 Color</button>
         </article>
         <article class="random-rgba">
           <button>Random RGBA</button>
@@ -257,11 +265,11 @@
         </article>
       </section>
 
-      <!--? RESULT DISPLAY COLUMN -->
+      <!-- ? RESULT DISPLAY COLUMN
       <section class="result-display changing-cols">
         <h2>Chosen Color Display</h2>
         <h3 class="choosen-color">Choosen Color Here</h3>
-      </section>
+      </section> -->
     </main>
 
     <script src="app.js"></script>

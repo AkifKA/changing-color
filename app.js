@@ -1,22 +1,30 @@
-//? INPUTS CAPTURING AND DECLARATION
+//? DECLARATION OF INPUTS
 
 //! Inputting text with color names  
 const colorsFromInput=document.querySelector(".colors-from-input-color");
-const selectedColorFromInput=colorsFromInput.value;
+
 
 //! Inputting text with RGB  
 const colorsFromInputRGB=document.querySelector(".colors-from-input-color-rgb");
-const selectedColorsFromInputRGB=colorsFromInputRGB.value;
+
 
 //! Inputting text with HEX  
 const colorsFromInputHEX=document.querySelector(".colors-from-input-color-hex");
-const selectedColorsFromInputHEX=colorsFromInputHEX;
 
-//? SELECT BOX CAPTURING AND DECLARATION
+
+//?  DECLARATION OF SELECT BOX 
 const colorsFromSelectBox=document.querySelector(".colors-from-select-box");
-const selecetedColorFromSelectBox=colorsFromSelectBox.text;
 
-//? RESULT DISPLAY DIV CAPTURING AND DECLARATION
+
+
+//?  DECLARATION OF INPUTS AND SELECTBOX CONTAINER SECTION DIV FOR MANUALLY CHANGING
+const inputsAndSelectBoxSectionDiv=document.querySelector(".changing-manually");
+
+
+//?  DECLARATION OF BUTTONS CONTAINER SECTION DIV FOR RANDOM CHANGING
+const buttonsSectionDiv=document.querySelector(".changing-random")
+
+//? RESULT DISPLAY SECTION DIV CAPTURING AND DECLARATION
 const resultDisplay=document.querySelector(".result-display");
 
 
@@ -24,13 +32,51 @@ const resultDisplay=document.querySelector(".result-display");
 const choosenColor=document.querySelector(".choosen-color");
 
 
+//?  CAPTURING OF INPUTS  CONTAINER SECTION DIV FOR RANDOM CHANGING
+inputsAndSelectBoxSectionDiv.addEventListener("input",(e)=>{
+
+    if(e.target.classList.contains("colors-from-input-color")){
+        choosenColor.innerText=colorsFromInput.value.toUpperCase();
+        resultDisplay.style.background=`${colorsFromInput.value}`;
+    }
+
+    else if(e.target.classList.contains("colors-from-input-color-rgb")){
+        choosenColor.innerText=`rgb (${colorsFromInputRGB.value.toUpperCase()})`;
+        resultDisplay.style.background=`rgb(${colorsFromInputRGB.value})`
+    }
+else if(e.target.classList.contains("colors-from-input-color-hex")){
+    choosenColor.innerText=`#${colorsFromInputHEX.value.toUpperCase()}`;
+    resultDisplay.style.background=`#${colorsFromInputHEX.value}`
+}
+})
 
 colorsFromSelectBox.addEventListener("change",(e)=>{
-    const {selectedIndex}=e.target;
-    console.log(e.target.id);
+    choosenColor.innerText=`${e.target[e.target.selectedIndex].text.toUpperCase()}`;
     resultDisplay.style.background=`${e.target.value}`
-    choosenColor.innerText=`${e.target[selectedIndex].text}`
-    })
+
+})
+
+
+
+
+//?  CAPTURING OF BUTTONS CONTAINER SECTION DIV FOR RANDOM CHANGING
+buttonsSectionDiv.addEventListener("click",(e)=>{
+//
+
+
+})
+
+
+
+
+
+
+// colorsFromSelectBox.addEventListener("change",(e)=>{
+//     const {selectedIndex}=e.target;
+//     console.log(e.target.id);
+//     resultDisplay.style.background=`${e.target.value}`
+//     choosenColor.innerText=`${e.target[selectedIndex].text}`
+//     })
     
 
 
