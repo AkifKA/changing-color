@@ -22,7 +22,11 @@ const inputsAndSelectBoxSectionDiv=document.querySelector(".changing-manually");
 
 
 //?  DECLARATION OF BUTTONS CONTAINER SECTION DIV FOR RANDOM CHANGING
-const buttonsSectionDiv=document.querySelector(".changing-random")
+const buttonsSectionDiv=document.querySelector(".changing-random");
+const button143Colors=document.querySelector(".button-143-colors");
+const buttonRGB=document.querySelector(".button-rgb");
+const buttonHEX=document.querySelector(".button-hex");
+
 
 //? RESULT DISPLAY SECTION DIV CAPTURING AND DECLARATION
 const resultDisplay=document.querySelector(".result-display");
@@ -30,6 +34,12 @@ const resultDisplay=document.querySelector(".result-display");
 
 //? RESULT CHOOSEN COLOR H3 CAPTURING AND DECLARATION
 const choosenColor=document.querySelector(".choosen-color");
+
+//?  DECLARATION OF 143 COLORS IN AN ARRAY
+
+colors=[
+    "indianred","lightcoral","lightcoral","salmon","darksalmon","lightsalmon","crimson","red","firebrick","darkred","pink","lightpink","hotpink","deeppink","mediumvioletred","palevioletred","lightsalmon","coral","tomato","orangered","darkorange","orange","gold","yellow","lightyellow","lemonchiffon","lightgoldenrodyellow","papayawhip","moccasin","peachpuff","palegoldenrod","khaki","darkkhaki","lavender","thistle","plum","violet","orchid","fuchsia","magenta","mediumorchid","mediumpurple","rebeccapurple","blueviolet","darkviolet","darkorchid","darkmagenta","purple","indigo","slateblue","darkslateblue","mediumslateblue","greenyellow","chartreuse","lawngreen","lime","limegreen","palegreen","lightgreen","mediumspringgreen","seagreen","forestgreen","green","darkgreen","yellowgreen","olivedrab","olive","darkolivegreen","mediumaquamarine","darkseagreen","lightseagreen","darkcyan","teal"
+]
 
 
 //?  CAPTURING OF INPUTS  CONTAINER SECTION DIV FOR RANDOM CHANGING
@@ -60,9 +70,15 @@ colorsFromSelectBox.addEventListener("change",(e)=>{
 
 
 //?  CAPTURING OF BUTTONS CONTAINER SECTION DIV FOR RANDOM CHANGING
-buttonsSectionDiv.addEventListener("click",(e)=>{
-//
+document.querySelector(".container").addEventListener("click",(e)=>{
 
+if(e.target.classList.contains("button-143-colors")){
+console.log("clicked");
+const randomColor=Math.floor(Math.random()*142);
+console.log(randomColor);
+console.log(e.target.closest(".changing-manually"));
+// console.log(e.target.parentElement.parentElement.parentElement.closest(".changing-with-select-box"));
+}
 
 })
 
@@ -71,80 +87,6 @@ buttonsSectionDiv.addEventListener("click",(e)=>{
 
 
 
-// colorsFromSelectBox.addEventListener("change",(e)=>{
-//     const {selectedIndex}=e.target;
-//     console.log(e.target.id);
-//     resultDisplay.style.background=`${e.target.value}`
-//     choosenColor.innerText=`${e.target[selectedIndex].text}`
-//     })
-    
 
-
-
-//? DECLARATION OF 140 COLORS
-const colors=[
-{
-id:0,
-color:"Indian Red",
-rgb: "(205, 92, 92)",
-hex:"#CD5C5C",
-},
-{
-id:1,
-color:"Light Coral",
-rgb: "(240, 128, 128)",
-hex:"#F08080",
-},
-{
-id:2,
-color:"Salmon",
-rgb: "(255, 0, 0)",
-hex:"#FA8072",
-},
-{
-id:3,
-color:"Dark Salmon",
-rgb: "(233, 150, 122)",
-hex:"#E9967A",
-},
-{
-id:4,
-color:"LightSalmon",
-rgb: "(255, 160, 122)",
-hex:"#FFA07A",
-},
-{
-id:5,
-color:"Crimson",
-rgb: "(220, 20, 60)",
-hex:"#DC143C",
-},
-{
-id:6,
-color:"Red",
-rgb: "(255, 0, 0)",
-hex:"#FF0000",
-},
-{
-id:7,
-color:"Fire Brick",
-rgb: "(178, 34, 34)",
-hex:"#22222",
-},
-{
-id:8,
-color:"Dark Red",
-rgb: "(139, 0, 0)",
-hex:"#8B0000",
-},
-{
-id:9,
-color:"Pink",
-rgb: "(255, 192, 203)",
-hex:"#FFC0CB",
-},
-
-
-];
 
 
